@@ -115,7 +115,7 @@ sentry:
 ![img.png](imgs/img.png)
 - url 监控
 ![img_1.png](imgs/img_1.png)
--javaMethod监控
+- javaMethod监控
 ![img_2.png](imgs/img_2.png)
 - sql 监控（支持mysql5、mysql8、oracle）
 ![img_3.png](imgs/img_3.png)
