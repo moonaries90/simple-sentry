@@ -25,7 +25,7 @@ public class UrlStats extends SectionStats {
     }
 
     public void ifNeedIncrementErrorCount(int code) {
-        if (null != this.pattern && !this.pattern.isSuccCode(code)) {
+        if (null != this.pattern && !this.pattern.isSuccessCode(code)) {
             super.errorCount.incrementAndGet();
         }
     }
