@@ -1,0 +1,4 @@
+org.springframework.context.ApplicationContextInitializer=\
+  com.sentry.agent.spring.SentryAgentContextInitializer
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.sentry.agent.autoconfiguration.PrometheusAutoConfiguration

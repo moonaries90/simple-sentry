@@ -1,0 +1,13 @@
+sentry:
+  agent:
+    javaMethods:
+      - pattern: com\.sentry\.boot\.demo\..*
+
+    url:
+      excludes:
+        - method: endwith
+          pattern: .png,.PNG,.jpg,.JPG,.gif,.ico,.js,.css,.html
+
+      includes:
+        - method: all
+

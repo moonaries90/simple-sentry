@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <javaMethod>
+        <class pattern="com\.sentry\.demo\..*">
+        </class>
+    </javaMethod>
+    <url>
+        <exclude method="endwith" pattern=".jpg,.png"/>
+        <include method="all"/>
+    </url>
+    <tags>
+        <item name="application" value="wso2"/>
+    </tags>
+</root>

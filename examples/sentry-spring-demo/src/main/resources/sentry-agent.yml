@@ -1,0 +1,17 @@
+sentry:
+  agent:
+    javaMethods:
+      - pattern: com\.sentry\.spring\.demo\..*
+
+    url:
+      excludes:
+        - method: endwith
+          pattern: .png,.PNG,.jpg,.JPG,.gif,.ico,.js,.css,.html
+
+      includes:
+        - method: all
+
+    tags:
+      application: sentry-spring-demo
+      env: my-own-test
+

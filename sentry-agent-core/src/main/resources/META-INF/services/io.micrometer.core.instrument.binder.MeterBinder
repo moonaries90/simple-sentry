@@ -1,0 +1,16 @@
+io.micrometer.core.instrument.binder.jvm.JvmGcMetrics
+io.micrometer.core.instrument.binder.jvm.ClassLoaderMetrics
+io.micrometer.core.instrument.binder.jvm.JvmMemoryMetrics
+io.micrometer.core.instrument.binder.jvm.JvmThreadMetrics
+io.micrometer.core.instrument.binder.system.FileDescriptorMetrics
+io.micrometer.core.instrument.binder.system.ProcessorMetrics
+io.micrometer.core.instrument.binder.system.UptimeMetrics
+
+com.sentry.agent.core.plugin.api.binder.RedisMeterBinder
+com.sentry.agent.core.plugin.api.binder.MethodMeterBinder
+com.sentry.agent.core.plugin.api.binder.UrlMeterBinder
+com.sentry.agent.core.plugin.api.binder.SqlMeterBinder
+com.sentry.agent.core.plugin.api.binder.HttpClientMeterBinder
+
+com.sentry.agent.core.plugin.api.binder.CommonInfoAggregator
+com.sentry.agent.core.plugin.api.binder.CustomAggregator

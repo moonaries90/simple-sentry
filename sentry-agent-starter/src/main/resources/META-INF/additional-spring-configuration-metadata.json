@@ -1,0 +1,51 @@
+{
+  "properties": [{
+    "name": "sentry.agent.tags",
+    "sourceType": "com.sentry.agent.core.config.props.SentryAgentConfig",
+    "type": "java.util.Map<java.lang.String, java.lang.String>",
+    "description": "额外的应用通用的 prometheus tag."
+  },{
+    "name": "sentry.agent.javaMethods",
+    "sourceType": "com.sentry.agent.core.config.props.SentryAgentConfig",
+    "type": "java.util.List<com.sentry.agent.core.config.props.JavaMethodPatternConfig>",
+    "description": "方法匹配规则."
+  },{
+    "name": "sentry.agent.url",
+    "sourceType": "com.sentry.agent.core.config.props.SentryAgentConfig",
+    "type": "com.sentry.agent.core.config.props.UrlConfig",
+    "description": "URL匹配规则."
+  },{
+    "name": "sentry.agent.url.includes",
+    "sourceType": "com.sentry.agent.core.config.props.UrlConfig",
+    "type": "java.util.List<com.sentry.agent.core.config.props.UrlConfig.IncludeConfig>",
+    "description": "包含匹配方法."
+  },{
+    "name": "sentry.agent.url.excludes",
+    "sourceType": "com.sentry.agent.core.config.props.UrlConfig",
+    "type": "java.util.List<com.sentry.agent.core.config.props.UrlConfig.ExcludeConfig>",
+    "description": "排除匹配方法."
+  },{
+    "name": "sentry.agent.enabled",
+    "sourceType": "com.sentry.agent.core.config.props.SentryAgentConfig",
+    "type": "com.sentry.agent.core.config.props.EnabledConfig",
+    "description": "开启配置."
+  },{
+    "name": "sentry.agent.enabled.sql",
+    "sourceType": "com.sentry.agent.core.config.props.EnabledConfig",
+    "type": "java.lang.Boolean",
+    "defaultValue": true,
+    "description": "SQL开启."
+  },{
+    "name": "sentry.agent.enabled.javaMethod",
+    "sourceType": "com.sentry.agent.core.config.props.EnabledConfig",
+    "type": "java.lang.Boolean",
+    "defaultValue": true,
+    "description": "javaMethod开启."
+  },{
+    "name": "sentry.agent.enabled.url",
+    "sourceType": "com.sentry.agent.core.config.props.EnabledConfig",
+    "type": "java.lang.Boolean",
+    "defaultValue": true,
+    "description": "url开启."
+  }]
+}
