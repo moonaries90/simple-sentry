@@ -110,19 +110,19 @@ sentry:
 
 支持维度
 - 总览
-![img.png](imgs/img6.png)
+![img.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img6.png)
 - jvm 监控
-![img.png](imgs/img.png)
+![img.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img.png)
 - url 监控
-![img_1.png](imgs/img_1.png)
--javaMethod监控
-![img_2.png](imgs/img_2.png)
+![img_1.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img_1.png)
+- javaMethod监控
+![img_2.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img_2.png)
 - sql 监控（支持mysql5、mysql8、oracle）
-![img_3.png](imgs/img_3.png)
+![img_3.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img_3.png)
 - httpClient监控（目前仅支持 org.apache.httpcomponents）
-![img_4.png](imgs/img_4.png)
+![img_4.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img_4.png)
 - redis 监控
-![img_5.png](imgs/img_5.png)
+![img_5.png](https://github.com/moonaries90/simple-sentry/raw/main/imgs/img_5.png)
 - 自定义业务监控项
 ```java
 // 支持自增长的数据，例如访问量
