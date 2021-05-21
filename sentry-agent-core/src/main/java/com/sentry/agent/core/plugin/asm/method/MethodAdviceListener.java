@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentMap;
 
 public class MethodAdviceListener extends AsmAdviceListener {
 
-    private final MethodAggregator methodAggregator = new MethodAggregator();
+    private static final MethodAggregator methodAggregator = new MethodAggregator();
 
     private final JavaMethodPatternItem item;
 

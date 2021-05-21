@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 public class OracleAdviceListener extends AsmAdviceListener {
 
-    private final OracleAggregator oracleAggregator = new OracleAggregator();
+    private static final OracleAggregator oracleAggregator = new OracleAggregator();
 
     private static final IntegerMap sqlCounter = new IntegerMap(2000);
 

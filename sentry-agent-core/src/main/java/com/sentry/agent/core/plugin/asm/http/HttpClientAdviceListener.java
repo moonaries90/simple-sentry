@@ -9,7 +9,7 @@ import java.util.Stack;
 
 public class HttpClientAdviceListener extends AsmAdviceListener {
 
-    private final HttpClientAggregator httpClientAggregator = new HttpClientAggregator();
+    private static final HttpClientAggregator httpClientAggregator = new HttpClientAggregator();
 
     private static Class<?> httpUriRequestClass = null;
 

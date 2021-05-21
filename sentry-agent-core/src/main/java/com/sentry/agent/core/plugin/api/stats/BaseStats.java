@@ -18,7 +18,7 @@ public class BaseStats {
             runningCount = new AtomicLong(),
             maxTime = new AtomicLong(),
             concurrentMax = new AtomicLong(),
-            millisTotal = new AtomicLong();
+            nanoTotal = new AtomicLong();
 
     protected String name;
 
@@ -41,10 +41,6 @@ public class BaseStats {
         return invokeCount;
     }
 
-    public AtomicLong getMillisTotal() {
-        return millisTotal;
-    }
-
     public AtomicLong getErrorCount() {
         return errorCount;
     }
@@ -59,6 +55,10 @@ public class BaseStats {
 
     public AtomicLong getConcurrentMax() {
         return concurrentMax;
+    }
+
+    public AtomicLong getNanoTotal() {
+        return nanoTotal;
     }
 
     public long onStart() {
@@ -90,18 +90,16 @@ public class BaseStats {
     public long onFinally(long start) {
         long end = System.nanoTime();
         this.runningCount.decrementAndGet();
-        long used = (end - start) / 1000000L;
-
-        this.millisTotal.accumulateAndGet(used, Long::sum);
-
+        long used = end - start;
+        this.nanoTotal.accumulateAndGet(used, Long::sum);
         long currentTime = System.currentTimeMillis();
         if(currentTime - lastMaxTime > 60000L) {
-            if (CompareUtil.setMaxValue(this.maxTime, used)) {
+            if (CompareUtil.setMaxValue(this.maxTime, used / 1000000L)) {
                 lastMaxTime = currentTime;
             }
         } else {
-            this.maxTime.set(used);
+            this.maxTime.set(used / 1000000L);
         }
-        return used;
+        return used / 1000000L;
     }
 }

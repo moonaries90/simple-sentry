@@ -16,7 +16,7 @@ public class RedisAdviceListener extends AsmAdviceListener {
 
     static final IntegerMap actionMap = new IntegerMap(200);
 
-    private final RedisAggregator redisAggregator = new RedisAggregator();
+    private static final RedisAggregator redisAggregator = new RedisAggregator();
 
     @Override
     protected PrimaryKey preparePrimaryKey(ClassLoader loader, String className, String methodName, String methodDesc, Object target, Object[] args) throws Throwable {

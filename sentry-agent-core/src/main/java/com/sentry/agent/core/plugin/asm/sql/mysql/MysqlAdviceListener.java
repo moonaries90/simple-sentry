@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 
 public class MysqlAdviceListener extends AsmAdviceListener {
 
-    private final MysqlAggregator mysqlAggregator = new MysqlAggregator();
+    private static final MysqlAggregator mysqlAggregator = new MysqlAggregator();
 
     private static final IntegerMap sqlCounter = new IntegerMap(2000);
 
