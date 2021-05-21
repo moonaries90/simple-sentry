@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sentry</groupId>
     <artifactId>sentry-agent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <modules>
         <module>sentry-agent-core</module>
         <module>sentry-agent-spring</module>
@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.1.12.RELEASE</spring-boot.version>
-        <sentry.version>1.2.0</sentry.version>
+        <sentry.version>1.2.1</sentry.version>
     </properties>
 
     <dependencyManagement>
