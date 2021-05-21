@@ -153,3 +153,4 @@ CustomAggregator.getAndSet("testGet", 123);
 - 1.1.0 处理自定义类加载器卸载类导致 transformer 失效的问题
 - 1.1.1 新增 javaMethod 忽略自定义异常
 - 1.2.0 字节码增强由 javassist 修改为 asm，新增 redis
+- 1.2.1 修复 aggregator 在热部署时的统计不生效的BUG，millis 修改为 nano
